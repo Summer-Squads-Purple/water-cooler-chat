@@ -7,11 +7,12 @@ import firebase from 'firebase/app';
 
 const Login = () => {
     return (
-        <div id="login=page">
+        <div id="login-page">
+          <img src="watercooler.png"/>
             <div id="login-card">
                 <h2>Welcome to the Water-Cooler!</h2>
 
-                <div 
+                <div
                     className="login-button google"
                     onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
                 >
@@ -26,8 +27,8 @@ const Login = () => {
                 >
                     <FacebookOutlined /> Sign In with Facebook
                 </div>
-            
-            
+
+
             </div>
         </div>
     );
